@@ -31,3 +31,12 @@
     transform: rotate(360deg);
   }
 }
+
+#card-grid {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+#card-grid div {
+  flex: 1;
+}

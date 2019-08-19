@@ -1,6 +1,5 @@
-
 #main-nav-wrapper {
-    background-color:var(--dark);
+    background-color:var(--warning);
 }
 
 #main-nav {
@@ -9,7 +8,7 @@
     max-width: 1080px;
     margin: auto;
     padding:0px 25px;
-    color:var(--light);
+    color:var(--dark);
 }
 
 #main-nav > div:nth-child(1) {
@@ -29,7 +28,7 @@
 
 #main-nav > div:nth-child(1) > a {
     text-decoration: none;
-    color:var(--light);
+    color:var(--dark);
 }
 
 #main-nav > div:nth-child(1) > a > h1 {
@@ -43,7 +42,7 @@
     justify-content: center;
     line-height: 75px;
     margin: 0px 35px;
-    color:var(--light);
+    color:var(--dark);
     text-decoration: none;
     font-size:16px;
 }
