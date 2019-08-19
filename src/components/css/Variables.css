@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,900&display=swap');
+
+:root {
+    --mainFont:'Titillium Web', sans-serif;
+    --light:#8fadbf;
+    --dark:#011f26;
+    --warning:#F5E560;
+    --darkBlue: #023e73;
+    --lightBlue: #0578A6;
+}
+
+body {
+    font-family:var(--mainFont);
+    /*font-family: 'Titillium Web', sans-serif !important;*/
+}
