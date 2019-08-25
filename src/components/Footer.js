@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import './css/Footer.css';
 import { tsConstructorType } from '@babel/types';
 
@@ -16,29 +16,21 @@ class Footer extends React.Component {
 
   render(){
     return(
-      <Router>
-           <div id="main-footer-wrapper">
-            <div id="main-footer">
-              <div>
-                <a href="/">
-                  <h1>{this.props.logo}</h1>
-                </a>
-              </div>
-              <hr style={{width:'100%'}}></hr>
-              <div>
-                <Link to="/Updates">Updates</Link>
-                <Link to="/Filter">Filter</Link>
-                <Link to="/Contact">Contact</Link>
-              </div>
-            </div>  
+          <div>
+            <div id="main-footer-wrapper">
+              <div id="main-footer">
+                <div>
+                  <a href="/">
+                    <h1>{this.props.logo}</h1>
+                  </a>
+                </div>
+                <hr style={{width:'100%'}}></hr>
+                <div>
+                  <Link to="/">Back to Home</Link>
+                </div>
+              </div>  
+            </div>
           </div>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/Updates" component={Updates} />
-            <Route path="/Filter" component={Filter} />
-            <Route path="/Contact" component={Contact} />
-          </Switch>
-        </Router>
     );
   }
 }
