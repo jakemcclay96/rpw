@@ -47,3 +47,13 @@
     font-size:16px;
 }
 
+.flex-footer-vert {
+    display:flex;
+    flex-direction:column;
+}
+
+.flex-footer-vert a{
+    line-height:unset !important;
+    flex:1;
+    margin:10px 0px;
+}

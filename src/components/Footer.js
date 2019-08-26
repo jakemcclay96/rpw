@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './css/Footer.css';
 import { tsConstructorType } from '@babel/types';
 
@@ -25,7 +25,10 @@ class Footer extends React.Component {
                   </a>
                 </div>
                 <hr style={{width:'100%'}}></hr>
-                <div>
+                <div className="flex-footer-vert">
+                  <Link to="/Updates">Updates</Link>
+                  <Link to="/Filter">Filter</Link>
+                  <Link to="/Contact">Contact</Link>
                   <Link to="/">Back to Home</Link>
                 </div>
               </div>  

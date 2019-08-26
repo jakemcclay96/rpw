@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
+import HeroBanner from './HeroBanner';
 
 class Contact extends React.Component {
     constructor(props){
@@ -8,7 +11,14 @@ class Contact extends React.Component {
 
 
     render(){
-        return(<div><h1>Contact</h1></div>);
+        return(
+            <div>
+                <HeroBanner pageBanner="ContactPageBanner"  />
+                <h1>Contact</h1>
+                <hr></hr>
+                <Link to="/"><h3>Back to Home</h3></Link>
+            </div>
+        );
     }
 }
 

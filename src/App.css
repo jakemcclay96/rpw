@@ -40,3 +40,7 @@
 #card-grid div {
   flex: 1;
 }
+
+#main-content-wrapper {
+  min-height:70vh;
+}

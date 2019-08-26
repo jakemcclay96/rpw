@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
+import HeroBanner from './HeroBanner';
 
 class Filter extends React.Component {
     constructor(props){
@@ -8,7 +11,14 @@ class Filter extends React.Component {
 
 
     render(){
-        return(<div><h1>Filter</h1></div>);
+        return(
+            <div>
+                <HeroBanner pageBanner="FilterPageBanner"  />
+                <h1>Filter</h1>
+                <hr></hr>
+                <Link to="/"><h3>Back to home</h3></Link>
+            </div>
+        );
     }
 }
 

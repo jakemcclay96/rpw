@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Updates from "./components/Updates";
 import Filter from "./components/Filter";
 import Contact from "./components/Contact";
+import Login from "./components/Login";
 import './components/css/Variables.css';
 import './App.css';
 
@@ -17,7 +18,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navigation logo="PW" />  
+        <Navigation logo="PW" /> 
 
       
         <div id="main-content-wrapper">
@@ -26,6 +27,7 @@ function App() {
               <Route path="/Updates" component={Updates} />
               <Route exact path="/Filter" component={Filter} />
               <Route path="/Contact" component={Contact} />
+              <Route path="/Login" component={Login} />
             </Switch>
         </div>
 
